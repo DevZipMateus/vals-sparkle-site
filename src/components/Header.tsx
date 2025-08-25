@@ -30,43 +30,43 @@ const Header = () => {
       }`}
     >
       <div className="container-responsive">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
               src="/lovable-uploads/a1235aaa-314b-46df-bb17-995c20e6fdbb.png" 
               alt="Val's Limpeza e Paisagismo - Logo" 
-              className="h-12 w-auto"
+              className="h-10 sm:h-12 w-auto"
             />
             <div className="hidden sm:block">
-              <h1 className="font-bold text-lg text-nature-700">Val's</h1>
+              <h1 className="font-bold text-base sm:text-lg text-nature-700">Val's</h1>
               <p className="text-xs text-nature-600">Limpeza & Paisagismo</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <button 
               onClick={() => scrollToSection('inicio')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium text-sm xl:text-base"
             >
               Início
             </button>
             <button 
               onClick={() => scrollToSection('sobre')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium text-sm xl:text-base"
             >
               Sobre
             </button>
             <button 
               onClick={() => scrollToSection('servicos')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium text-sm xl:text-base"
             >
               Serviços
             </button>
             <button 
               onClick={() => scrollToSection('contato')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium text-sm xl:text-base"
             >
               Contato
             </button>
@@ -92,45 +92,45 @@ const Header = () => {
             className="lg:hidden p-2 rounded-md hover:bg-accent transition-colors"
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6" /> : <Menu className="h-5 w-5 sm:h-6 sm:w-6" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border bg-white/95 backdrop-blur-md">
-            <nav className="flex flex-col space-y-4">
+            <nav className="flex flex-col space-y-2 sm:space-y-4">
               <button 
                 onClick={() => scrollToSection('inicio')}
-                className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors font-medium text-sm sm:text-base"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')}
-                className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors font-medium text-sm sm:text-base"
               >
                 Sobre
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors font-medium text-sm sm:text-base"
               >
                 Serviços
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors font-medium text-sm sm:text-base"
               >
                 Contato
               </button>
               <div className="px-4 pt-2 border-t border-border">
-                <div className="flex items-center space-x-2 text-sm mb-3">
-                  <Phone className="h-4 w-4 text-primary" />
+                <div className="flex items-center space-x-2 text-xs sm:text-sm mb-3">
+                  <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
                   <span className="text-foreground">(11) 91031-4915</span>
                 </div>
                 <Button 
-                  className="btn-hero w-full"
+                  className="btn-hero w-full text-sm"
                   onClick={() => window.open('https://wa.me/5511910314915', '_blank')}
                 >
                   WhatsApp

@@ -52,25 +52,25 @@ Mensagem: ${formData.message}`;
 
   const contactInfo = [
     {
-      icon: <Phone className="h-6 w-6 text-primary" />,
+      icon: <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       title: "Telefone",
       content: "(11) 91031-4915",
       link: "tel:+5511910314915"
     },
     {
-      icon: <Mail className="h-6 w-6 text-primary" />,
+      icon: <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       title: "Email",
       content: "val.slimpeza@gmail.com",
       link: "mailto:val.slimpeza@gmail.com"
     },
     {
-      icon: <MapPin className="h-6 w-6 text-primary" />,
+      icon: <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       title: "Endereço",
       content: "Rua Gentile Gioachino, 178\nVila Nova Sorocaba - Sorocaba\nCEP: 18070-825",
       link: "https://maps.google.com/maps?q=Rua+Gentile+Gioachino,+178,+Vila+Nova+Sorocaba,+Sorocaba"
     },
     {
-      icon: <Clock className="h-6 w-6 text-primary" />,
+      icon: <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       title: "Horário",
       content: "Segunda a Sexta\n8h às 18h",
       link: null
@@ -78,46 +78,46 @@ Mensagem: ${formData.message}`;
   ];
 
   return (
-    <section id="contato" className="py-20 bg-white">
+    <section id="contato" className="py-12 sm:py-20 bg-white">
       <div className="container-responsive">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-responsive-3xl font-bold mb-4 sm:mb-6">
             <span className="gradient-text">Entre em Contato</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-responsive-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
             Estamos prontos para atender suas necessidades. Solicite seu orçamento sem compromisso 
             e descubra como podemos ajudar você.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-8 sm:gap-12">
           {/* Contact Info */}
-          <div className="lg:col-span-1 space-y-6 animate-slide-in">
+          <div className="lg:col-span-1 space-responsive-sm animate-slide-in order-2 lg:order-1">
             <Card className="border-nature-200">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-foreground">
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="text-lg sm:text-2xl font-bold text-foreground">
                   Informações de Contato
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-responsive-sm p-4 sm:p-6 pt-0">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="bg-nature-100 p-3 rounded-lg flex-shrink-0">
+                  <div key={index} className="flex items-start space-x-3 sm:space-x-4">
+                    <div className="bg-nature-100 p-2 sm:p-3 rounded-lg flex-shrink-0">
                       {info.icon}
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">{info.title}</h4>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">{info.title}</h4>
                       {info.link ? (
                         <a 
                           href={info.link}
                           target={info.link.startsWith('http') ? '_blank' : undefined}
                           rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-muted-foreground hover:text-primary transition-colors whitespace-pre-line text-sm"
+                          className="text-muted-foreground hover:text-primary transition-colors whitespace-pre-line text-xs sm:text-sm break-words"
                         >
                           {info.content}
                         </a>
                       ) : (
-                        <p className="text-muted-foreground whitespace-pre-line text-sm">
+                        <p className="text-muted-foreground whitespace-pre-line text-xs sm:text-sm">
                           {info.content}
                         </p>
                       )}
@@ -129,8 +129,8 @@ Mensagem: ${formData.message}`;
 
             {/* Social Media */}
             <Card className="border-nature-200">
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-4">Redes Sociais</h4>
+              <CardContent className="p-4 sm:p-6">
+                <h4 className="font-semibold text-foreground mb-3 sm:mb-4 text-sm sm:text-base">Redes Sociais</h4>
                 <div className="space-y-3">
                   <a 
                     href="https://www.instagram.com/valslimpezaepaisagismo"
@@ -138,10 +138,10 @@ Mensagem: ${formData.message}`;
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors"
                   >
-                    <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                      <span className="text-white text-sm font-bold">IG</span>
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-xs sm:text-sm font-bold">IG</span>
                     </div>
-                    <span className="text-sm">@valslimpezaepaisagismo</span>
+                    <span className="text-xs sm:text-sm truncate">@valslimpezaepaisagismo</span>
                   </a>
                   
                   <a 
@@ -150,10 +150,10 @@ Mensagem: ${formData.message}`;
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors"
                   >
-                    <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                      <span className="text-white text-sm font-bold">FB</span>
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-xs sm:text-sm font-bold">FB</span>
                     </div>
-                    <span className="text-sm">Val's Limpeza</span>
+                    <span className="text-xs sm:text-sm">Val's Limpeza</span>
                   </a>
                 </div>
               </CardContent>
@@ -161,21 +161,21 @@ Mensagem: ${formData.message}`;
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2 animate-fade-in">
+          <div className="lg:col-span-2 animate-fade-in order-1 lg:order-2">
             <Card className="border-nature-200">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-foreground">
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="text-lg sm:text-2xl font-bold text-foreground">
                   Solicite seu Orçamento
                 </CardTitle>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm sm:text-base">
                   Preencha o formulário abaixo e entraremos em contato rapidamente.
                 </p>
               </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+              <CardContent className="p-4 sm:p-6 pt-0">
+                <form onSubmit={handleSubmit} className="space-responsive-sm">
+                  <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-foreground mb-2">
                         Nome Completo *
                       </label>
                       <Input
@@ -186,12 +186,12 @@ Mensagem: ${formData.message}`;
                         value={formData.name}
                         onChange={handleInputChange}
                         placeholder="Seu nome completo"
-                        className="border-nature-200 focus:border-primary"
+                        className="border-nature-200 focus:border-primary text-sm"
                       />
                     </div>
                     
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-foreground mb-2">
                         Email *
                       </label>
                       <Input
@@ -202,14 +202,14 @@ Mensagem: ${formData.message}`;
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="seu@email.com"
-                        className="border-nature-200 focus:border-primary"
+                        className="border-nature-200 focus:border-primary text-sm"
                       />
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="phone" className="block text-xs sm:text-sm font-medium text-foreground mb-2">
                         Telefone *
                       </label>
                       <Input
@@ -220,12 +220,12 @@ Mensagem: ${formData.message}`;
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="(11) 99999-9999"
-                        className="border-nature-200 focus:border-primary"
+                        className="border-nature-200 focus:border-primary text-sm"
                       />
                     </div>
                     
                     <div>
-                      <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="service" className="block text-xs sm:text-sm font-medium text-foreground mb-2">
                         Serviço de Interesse
                       </label>
                       <select
@@ -233,7 +233,7 @@ Mensagem: ${formData.message}`;
                         name="service"
                         value={formData.service}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-nature-200 rounded-md focus:outline-none focus:border-primary bg-background"
+                        className="w-full px-3 py-2 border border-nature-200 rounded-md focus:outline-none focus:border-primary bg-background text-sm"
                       >
                         <option value="">Selecione um serviço</option>
                         <option value="limpeza-conservacao">Limpeza e Conservação</option>
@@ -246,17 +246,17 @@ Mensagem: ${formData.message}`;
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="message" className="block text-xs sm:text-sm font-medium text-foreground mb-2">
                       Mensagem
                     </label>
                     <Textarea
                       id="message"
                       name="message"
-                      rows={5}
+                      rows={4}
                       value={formData.message}
                       onChange={handleInputChange}
                       placeholder="Descreva suas necessidades, local do serviço, frequência desejada, etc."
-                      className="border-nature-200 focus:border-primary resize-none"
+                      className="border-nature-200 focus:border-primary resize-none text-sm"
                     />
                   </div>
 
@@ -268,13 +268,13 @@ Mensagem: ${formData.message}`;
                   >
                     {isSubmitting ? (
                       <>
-                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                        <div className="animate-spin rounded-full h-4 w-4 sm:h-5 sm:w-5 border-b-2 border-white mr-2"></div>
                         Enviando...
                       </>
                     ) : (
                       <>
                         Enviar Mensagem
-                        <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                        <Send className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
                       </>
                     )}
                   </Button>
@@ -289,21 +289,21 @@ Mensagem: ${formData.message}`;
         </div>
 
         {/* Quick Contact */}
-        <div className="mt-16 text-center">
+        <div className="mt-12 sm:mt-16 text-center">
           <Card className="bg-gradient-to-r from-nature-50 to-nature-100 border-nature-200 max-w-4xl mx-auto">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
+            <CardContent className="p-6 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-foreground">
                 Prefere falar direto conosco?
               </h3>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 px-4 sm:px-0">
                 Entre em contato agora mesmo pelo WhatsApp e receba atendimento imediato.
               </p>
               <Button 
                 size="lg" 
-                className="btn-hero group"
+                className="btn-hero group w-full sm:w-auto"
                 onClick={() => window.open('https://wa.me/5511910314915?text=Olá! Gostaria de falar sobre os serviços da Val\'s.', '_blank')}
               >
-                <Phone className="mr-2 h-5 w-5" />
+                <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 WhatsApp Direto
               </Button>
             </CardContent>

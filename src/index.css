@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,76 +7,58 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 142 15% 15%;
-
+    --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
-    --card-foreground: 142 15% 15%;
-
+    --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 142 15% 15%;
-
-    --primary: 142 45% 35%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 142 15% 96%;
-    --secondary-foreground: 142 45% 25%;
-
-    --muted: 142 10% 95%;
-    --muted-foreground: 142 8% 45%;
-
-    --accent: 142 30% 88%;
-    --accent-foreground: 142 45% 25%;
-
-    --destructive: 0 84% 60%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-
-    --border: 142 15% 90%;
-    --input: 142 15% 90%;
-    --ring: 142 45% 35%;
-
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142 76% 36%;
     --radius: 0.75rem;
-
-    /* Nature palette - Green tones */
-    --nature-50: 142 50% 95%;
-    --nature-100: 142 45% 88%;
-    --nature-200: 142 40% 78%;
-    --nature-300: 142 35% 65%;
-    --nature-400: 142 30% 52%;
-    --nature-500: 142 45% 35%;
-    --nature-600: 142 50% 28%;
-    --nature-700: 142 55% 22%;
-    --nature-800: 142 60% 18%;
-    --nature-900: 142 65% 12%;
+    
+    --nature-50: 138 50% 96%;
+    --nature-100: 140 46% 92%;
+    --nature-200: 141 47% 84%;
+    --nature-300: 141 47% 68%;
+    --nature-400: 142 52% 52%;
+    --nature-500: 142 76% 36%;
+    --nature-600: 142 85% 28%;
+    --nature-700: 143 85% 22%;
+    --nature-800: 144 82% 17%;
+    --nature-900: 144 95% 14%;
   }
 
   .dark {
-    --background: 142 25% 8%;
-    --foreground: 0 0% 95%;
-
-    --card: 142 25% 8%;
-    --card-foreground: 0 0% 95%;
-
-    --popover: 142 25% 8%;
-    --popover-foreground: 0 0% 95%;
-
-    --primary: 142 40% 65%;
-    --primary-foreground: 142 25% 8%;
-
-    --secondary: 142 15% 15%;
-    --secondary-foreground: 0 0% 95%;
-
-    --muted: 142 15% 15%;
-    --muted-foreground: 142 8% 65%;
-
-    --accent: 142 15% 15%;
-    --accent-foreground: 0 0% 95%;
-
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 95%;
-
-    --border: 142 15% 15%;
-    --input: 142 15% 15%;
-    --ring: 142 40% 65%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142 76% 36%;
   }
 }
 
@@ -84,42 +66,129 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground font-inter;
-  }
-
-  html {
-    scroll-behavior: smooth;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer components {
-  .section-padding {
-    @apply px-4 sm:px-6 lg:px-8;
-  }
-
+  /* Container responsivo */
   .container-responsive {
-    @apply max-w-7xl mx-auto section-padding;
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
   }
 
+  /* Gradientes */
   .gradient-text {
-    @apply bg-gradient-to-r from-nature-600 to-nature-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-nature-600 via-nature-500 to-nature-400 bg-clip-text text-transparent;
   }
 
-  .shadow-nature {
-    box-shadow: 0 10px 25px -5px hsla(var(--nature-500), 0.1), 0 10px 10px -5px hsla(var(--nature-500), 0.04);
-  }
-
+  /* Botões */
   .btn-hero {
-    @apply bg-primary text-primary-foreground hover:bg-nature-600 hover:text-white border-primary/60 hover:border-nature-600 transition-all duration-300 shadow-nature hover:shadow-lg;
+    @apply bg-gradient-to-r from-nature-600 to-nature-500 hover:from-nature-700 hover:to-nature-600 text-white shadow-lg hover:shadow-xl;
   }
 
   .btn-outline-hero {
-    @apply bg-white/10 text-primary border-primary/60 hover:bg-primary hover:text-primary-foreground hover:border-primary backdrop-blur-sm transition-all duration-300;
+    @apply border-2 border-nature-500 text-nature-600 hover:bg-nature-500 hover:text-white hover:border-nature-500;
   }
 
+  /* Sombras */
+  .shadow-nature {
+    @apply shadow-lg shadow-nature-500/10;
+  }
+
+  /* Cards */
   .card-hover {
     @apply transition-all duration-300 hover:shadow-nature hover:-translate-y-1;
+  }
+
+  /* Responsive grid utilities */
+  .grid-responsive-1 {
+    @apply grid grid-cols-1;
+  }
+  
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 md:grid-cols-2;
+  }
+  
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+  
+  .grid-responsive-4 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+
+  /* Text responsive utilities */
+  .text-responsive-xs {
+    @apply text-xs sm:text-sm;
+  }
+  
+  .text-responsive-sm {
+    @apply text-sm sm:text-base;
+  }
+  
+  .text-responsive-base {
+    @apply text-base sm:text-lg;
+  }
+  
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl lg:text-2xl;
+  }
+  
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+  }
+  
+  .text-responsive-2xl {
+    @apply text-2xl sm:text-3xl lg:text-4xl;
+  }
+  
+  .text-responsive-3xl {
+    @apply text-3xl sm:text-4xl lg:text-5xl;
+  }
+
+  /* Spacing responsive utilities */
+  .space-responsive-sm {
+    @apply space-y-2 sm:space-y-4;
+  }
+  
+  .space-responsive-md {
+    @apply space-y-4 sm:space-y-6 lg:space-y-8;
+  }
+  
+  .space-responsive-lg {
+    @apply space-y-6 sm:space-y-8 lg:space-y-12;
+  }
+
+  /* Padding responsive utilities */
+  .p-responsive-sm {
+    @apply p-4 sm:p-6;
+  }
+  
+  .p-responsive-md {
+    @apply p-6 sm:p-8;
+  }
+  
+  .p-responsive-lg {
+    @apply p-8 sm:p-12 lg:p-16;
+  }
+}
+
+/* Ensure no horizontal overflow */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Mobile-first approach for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent text from being too small on mobile */
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
   }
 }

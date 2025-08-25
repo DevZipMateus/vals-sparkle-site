@@ -30,13 +30,14 @@ const WhatsAppFloat = () => {
   return (
     <>
       {/* Floating Button */}
-      <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
+      <div className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50 animate-fade-in">
         <div className="relative">
           {/* Tooltip */}
           {showTooltip && (
             <div className="absolute bottom-full right-0 mb-2 animate-fade-in">
-              <div className="bg-white text-nature-800 px-4 py-2 rounded-lg shadow-nature text-sm font-medium whitespace-nowrap relative">
-                Precisa de ajuda? Fale conosco!
+              <div className="bg-white text-nature-800 px-3 sm:px-4 py-2 rounded-lg shadow-nature text-xs sm:text-sm font-medium whitespace-nowrap relative max-w-[200px] sm:max-w-none">
+                <span className="hidden sm:inline">Precisa de ajuda? Fale conosco!</span>
+                <span className="sm:hidden">Fale conosco!</span>
                 <button
                   onClick={() => setShowTooltip(false)}
                   className="ml-2 text-nature-600 hover:text-nature-800"
@@ -45,7 +46,7 @@ const WhatsAppFloat = () => {
                   <X className="h-3 w-3" />
                 </button>
                 {/* Arrow */}
-                <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-white"></div>
+                <div className="absolute top-full right-3 sm:right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-white"></div>
               </div>
             </div>
           )}
@@ -53,10 +54,10 @@ const WhatsAppFloat = () => {
           {/* Button */}
           <button
             onClick={handleWhatsAppClick}
-            className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group animate-float"
+            className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group animate-float"
             aria-label="Conversar no WhatsApp"
           >
-            <MessageCircle className="h-7 w-7 group-hover:scale-110 transition-transform" />
+            <MessageCircle className="h-5 w-5 sm:h-7 sm:w-7 group-hover:scale-110 transition-transform" />
             
             {/* Pulse effect */}
             <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>
