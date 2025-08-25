@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -26,8 +25,9 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-nature' : 'bg-transparent'
+        isScrolled ? 'backdrop-blur-md shadow-nature' : ''
       }`}
+      style={{ backgroundColor: '#fcffde' }}
     >
       <div className="container-responsive">
         <div className="flex items-center justify-between h-16 sm:h-20">
@@ -98,7 +98,10 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border bg-white/95 backdrop-blur-md">
+          <div 
+            className="lg:hidden py-4 border-t border-border backdrop-blur-md"
+            style={{ backgroundColor: '#fcffde' }}
+          >
             <nav className="flex flex-col space-y-2 sm:space-y-4">
               <button 
                 onClick={() => scrollToSection('inicio')}
