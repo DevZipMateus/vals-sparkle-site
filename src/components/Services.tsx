@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Sparkles, TreePine, Layers, Brush } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
