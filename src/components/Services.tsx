@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Sparkles, TreePine, FloorPlan, Brush } from 'lucide-react';
+import { Sparkles, TreePine, Layers, Brush } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -8,12 +7,12 @@ const Services = () => {
   const services = [
     {
       icon: <Sparkles className="h-12 w-12 text-primary" />,
-      title: "Limpeza e Conservação",
+      title: "Limpeza e Conservação", 
       description: "Serviços completos de limpeza predial, conservação de ambientes corporativos e residenciais com produtos de alta qualidade.",
       features: ["Limpeza predial", "Conservação diária", "Produtos ecológicos", "Equipe treinada"]
     },
     {
-      icon: <FloorPlan className="h-12 w-12 text-primary" />,
+      icon: <Layers className="h-12 w-12 text-primary" />,
       title: "Tratamento de Piso",
       description: "Especialistas em tratamento, enceramento e restauração de pisos. Devolvemos o brilho e proteção para todos os tipos de revestimento.",
       features: ["Enceramento profissional", "Restauração", "Impermeabilização", "Manutenção preventiva"]
