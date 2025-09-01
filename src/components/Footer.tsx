@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
 
@@ -15,7 +14,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/a1235aaa-314b-46df-bb17-995c20e6fdbb.png" 
                 alt="Val's Limpeza e Paisagismo" 
-                className="h-10 sm:h-12 w-auto filter invert"
+                className="h-10 sm:h-12 w-auto brightness-0 invert"
                 onError={(e) => {
                   console.error('Erro ao carregar a imagem da logo');
                   e.currentTarget.style.display = 'none';
