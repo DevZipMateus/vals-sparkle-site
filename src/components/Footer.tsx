@@ -10,20 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Company Info */}
           <div className="space-responsive-sm text-center sm:text-left">
-            <div className="flex items-center justify-center sm:justify-start space-x-3 mb-4">
-              <img 
-                src="/lovable-uploads/a1235aaa-314b-46df-bb17-995c20e6fdbb.png" 
-                alt="Val's Limpeza e Paisagismo" 
-                className="h-10 sm:h-12 w-auto brightness-0 invert"
-                onError={(e) => {
-                  console.error('Erro ao carregar a imagem da logo');
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-              <div>
-                <h3 className="font-bold text-base sm:text-lg text-white">Val's</h3>
-                <p className="text-xs sm:text-sm text-nature-300">Limpeza & Paisagismo</p>
-              </div>
+            <div className="mb-4">
+              <h3 className="font-bold text-base sm:text-lg text-white">Val's</h3>
+              <p className="text-xs sm:text-sm text-nature-300">Limpeza & Paisagismo</p>
             </div>
             <p className="text-nature-300 text-xs sm:text-sm leading-relaxed mb-2">
               Mais de 20 anos transformando ambientes com qualidade, profissionalismo e sustentabilidade.
