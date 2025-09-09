@@ -22,7 +22,7 @@ const Hero = () => {
               </div>
               
               <h1 className="text-responsive-3xl font-bold leading-tight">
-                <span className="gradient-text">Limpeza profissional</span>
+                <span className="text-white">Limpeza profissional</span>
                 <br />
                 <span className="text-white">com toque pessoal</span>
               </h1>
