@@ -27,7 +27,7 @@ const Hero = () => {
                 <span className="text-foreground">com toque pessoal</span>
               </h1>
               
-              <p className="text-responsive-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-responsive-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 text-zinc-950">
                 Cultivando o melhor em cada serviço. Especializados em limpeza, conservação, tratamento de piso e paisagismo em Sorocaba e região.
               </p>
             </div>
