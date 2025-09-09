@@ -18,16 +18,16 @@ const Hero = () => {
             <div className="space-responsive-sm">
               <div className="flex items-center justify-center lg:justify-start space-x-2 text-white font-medium">
                 <Leaf className="h-4 w-4 sm:h-5 sm:w-5 bg-transparent" />
-                <span className="text-responsive-sm text-slate-950">Mais de 20 anos de experiência</span>
+                <span className="text-responsive-sm text-white">Mais de 20 anos de experiência</span>
               </div>
               
               <h1 className="text-responsive-3xl font-bold leading-tight">
                 <span className="gradient-text">Limpeza profissional</span>
                 <br />
-                <span className="text-foreground">com toque pessoal</span>
+                <span className="text-white">com toque pessoal</span>
               </h1>
               
-              <p className="text-responsive-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 text-zinc-950">
+              <p className="text-responsive-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 text-white">
                 Cultivando o melhor em cada serviço. Especializados em limpeza, conservação, tratamento de piso e paisagismo em Sorocaba e região.
               </p>
             </div>
