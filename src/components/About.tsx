@@ -42,7 +42,7 @@ const About = () => {
 
             <div className="space-responsive-sm text-muted-foreground leading-relaxed text-center lg:text-left">
               <p className="text-responsive-base">
-                Localizada na cidade de <strong className="text-foreground">Sorocaba - SP</strong>, a Val's Limpeza e Jardinagem é uma empresa especializada em terceirização de mão de obra.
+                Localizada na cidade de <strong className="text-foreground">Sorocaba - SP</strong>, a Val's Limpeza e Paisagismo é uma empresa especializada em terceirização de mão de obra.
               </p>
               
               <p className="text-responsive-sm">

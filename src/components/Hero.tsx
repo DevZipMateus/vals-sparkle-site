@@ -89,7 +89,7 @@ const Hero = () => {
           {/* Image */}
           <div className="relative animate-slide-in order-first lg:order-last">
             <div className="relative max-w-sm sm:max-w-md mx-auto">
-              <img src="/lovable-uploads/a1235aaa-314b-46df-bb17-995c20e6fdbb.png" alt="Val's Limpeza e Paisagismo - Serviços profissionais de limpeza e jardinagem" className="w-full h-auto drop-shadow-2xl" />
+              <img src="/lovable-uploads/a1235aaa-314b-46df-bb17-995c20e6fdbb.png" alt="Val's Limpeza e Paisagismo - Serviços profissionais de limpeza e paisagismo" className="w-full h-auto drop-shadow-2xl" />
               <div className="absolute -bottom-4 -right-4 w-16 h-16 sm:w-24 sm:h-24 bg-nature-500/20 rounded-full blur-2xl animate-pulse"></div>
             </div>
           </div>

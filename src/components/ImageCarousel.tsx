@@ -31,7 +31,7 @@ const ImageCarousel = () => {
     },
     {
       src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.19_eaec2be7.jpg',
-      alt: 'Serviços de jardinagem e paisagismo'
+      alt: 'Serviços de paisagismo'
     },
     {
       src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.20_118df18e.jpg',

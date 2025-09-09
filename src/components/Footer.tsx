@@ -38,7 +38,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#servicos" className="hover:text-white transition-colors">
-                  Jardinagem e Paisagismo
+                  Paisagismo
                 </a>
               </li>
               <li>

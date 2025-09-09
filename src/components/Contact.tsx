@@ -238,7 +238,7 @@ Mensagem: ${formData.message}`;
                         <option value="">Selecione um serviço</option>
                         <option value="limpeza-conservacao">Limpeza e Conservação</option>
                         <option value="tratamento-piso">Tratamento de Piso</option>
-                        <option value="jardinagem-paisagismo">Jardinagem e Paisagismo</option>
+                        <option value="jardinagem-paisagismo">Paisagismo</option>
                         <option value="servicos-especializados">Serviços Especializados</option>
                         <option value="multiplos-servicos">Múltiplos Serviços</option>
                       </select>
