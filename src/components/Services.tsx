@@ -9,8 +9,8 @@ const Services = () => {
     {
       icon: <Sparkles className="h-8 w-8 sm:h-12 sm:w-12 text-primary" />,
       title: "Limpeza e Conservação", 
-      description: "Serviços completos de limpeza predial, conservação de ambientes corporativos e residenciais com produtos de alta qualidade.",
-      features: ["Limpeza predial", "Conservação diária", "Produtos ecológicos", "Equipe treinada"]
+      description: "Serviços completos de limpeza comercial, conservação de ambientes corporativos e residenciais com produtos de alta qualidade.",
+      features: ["Limpeza comercial", "Conservação diária", "Produtos ecológicos", "Equipe treinada"]
     },
     {
       icon: <Layers className="h-8 w-8 sm:h-12 sm:w-12 text-primary" />,
