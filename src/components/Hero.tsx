@@ -77,11 +77,11 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-xs sm:text-sm text-muted-foreground pt-4">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span>CNPJ: 37.622.945/0001-55</span>
+                <span className="text-slate-50">CNPJ: 37.622.945/0001-55</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span>Sorocaba - SP</span>
+                <span className="text-gray-50">Sorocaba - SP</span>
               </div>
             </div>
           </div>
