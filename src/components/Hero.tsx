@@ -3,7 +3,7 @@ import { Sparkles, Leaf, Shield, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const Hero = () => {
   return <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden" style={{
-    background: '#74ea4d'
+    background: '#3e520d'
   }}>
       {/* Background Elements */}
       <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-48 h-48 sm:w-72 sm:h-72 bg-nature-200/30 rounded-full blur-3xl animate-float"></div>
