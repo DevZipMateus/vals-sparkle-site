@@ -6,14 +6,14 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 87 85% 59%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 142 76% 36%;
-    --primary-foreground: 355.7 100% 97.3%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 240 10% 3.9%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
@@ -24,30 +24,30 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 142 76% 36%;
+    --ring: 0 0% 100%;
     --radius: 0.75rem;
     
-    --nature-50: 138 50% 96%;
-    --nature-100: 140 46% 92%;
-    --nature-200: 141 47% 84%;
-    --nature-300: 141 47% 68%;
-    --nature-400: 142 52% 52%;
-    --nature-500: 142 76% 36%;
-    --nature-600: 142 85% 28%;
-    --nature-700: 143 85% 22%;
-    --nature-800: 144 82% 17%;
-    --nature-900: 144 95% 14%;
+    --nature-50: 0 0% 98%;
+    --nature-100: 0 0% 96%;
+    --nature-200: 0 0% 92%;
+    --nature-300: 0 0% 88%;
+    --nature-400: 0 0% 82%;
+    --nature-500: 0 0% 100%;
+    --nature-600: 0 0% 100%;
+    --nature-700: 0 0% 100%;
+    --nature-800: 0 0% 95%;
+    --nature-900: 0 0% 90%;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 87 85% 59%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 142 76% 36%;
-    --primary-foreground: 355.7 100% 97.3%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 240 10% 3.9%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
@@ -58,7 +58,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 142 76% 36%;
+    --ring: 0 0% 100%;
   }
 }
 
@@ -85,11 +85,11 @@
 
   /* Botões */
   .btn-hero {
-    @apply bg-gradient-to-r from-nature-600 to-nature-500 hover:from-nature-700 hover:to-nature-600 text-white shadow-lg hover:shadow-xl;
+    @apply bg-gradient-to-r from-nature-600 to-nature-500 hover:from-nature-700 hover:to-nature-600 text-foreground shadow-lg hover:shadow-xl;
   }
 
   .btn-outline-hero {
-    @apply border-2 border-nature-500 text-nature-600 hover:bg-nature-500 hover:text-white hover:border-nature-500;
+    @apply border-2 border-nature-500 text-nature-600 hover:bg-nature-500 hover:text-foreground hover:border-nature-500;
   }
 
   /* Sombras */

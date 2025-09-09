@@ -24,10 +24,9 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/80 ${
         isScrolled ? 'backdrop-blur-md shadow-nature' : ''
       }`}
-      style={{ backgroundColor: '#fcffde' }}
     >
       <div className="container-responsive">
         <div className="flex items-center justify-between h-16 sm:h-20">
@@ -99,8 +98,7 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div 
-            className="lg:hidden py-4 border-t border-border backdrop-blur-md"
-            style={{ backgroundColor: '#fcffde' }}
+            className="lg:hidden py-4 border-t border-border backdrop-blur-md bg-background/80"
           >
             <nav className="flex flex-col space-y-2 sm:space-y-4">
               <button 
