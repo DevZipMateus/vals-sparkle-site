@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center bg-gradient-to-br from-nature-50 via-white to-nature-100 overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden" style={{ background: '#74ea4d' }}>
       {/* Background Elements */}
       <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-48 h-48 sm:w-72 sm:h-72 bg-nature-200/30 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-64 h-64 sm:w-96 sm:h-96 bg-nature-300/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
