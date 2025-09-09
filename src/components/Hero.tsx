@@ -15,7 +15,7 @@ const Hero = () => {
           {/* Content */}
           <div className="space-responsive-lg animate-fade-in text-center lg:text-left">
             <div className="space-responsive-sm">
-              <div className="flex items-center justify-center lg:justify-start space-x-2 text-primary font-medium">
+              <div className="flex items-center justify-center lg:justify-start space-x-2 text-white font-medium">
                 <Leaf className="h-4 w-4 sm:h-5 sm:w-5" />
                 <span className="text-responsive-sm">Mais de 20 anos de experiência</span>
               </div>
@@ -34,7 +34,7 @@ const Hero = () => {
             {/* Features */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
               <div className="flex items-center space-x-3 p-3 sm:p-4 bg-white/60 backdrop-blur-sm rounded-lg border border-nature-200">
-                <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-primary flex-shrink-0" />
+                <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white flex-shrink-0" />
                 <div className="text-left">
                   <h3 className="font-semibold text-xs sm:text-sm">Qualidade</h3>
                   <p className="text-xs text-muted-foreground">Garantida</p>
@@ -42,7 +42,7 @@ const Hero = () => {
               </div>
               
               <div className="flex items-center space-x-3 p-3 sm:p-4 bg-white/60 backdrop-blur-sm rounded-lg border border-nature-200">
-                <Sparkles className="h-6 w-6 sm:h-8 sm:w-8 text-primary flex-shrink-0" />
+                <Sparkles className="h-6 w-6 sm:h-8 sm:w-8 text-white flex-shrink-0" />
                 <div className="text-left">
                   <h3 className="font-semibold text-xs sm:text-sm">Profissional</h3>
                   <p className="text-xs text-muted-foreground">Certificado</p>
@@ -50,7 +50,7 @@ const Hero = () => {
               </div>
               
               <div className="flex items-center space-x-3 p-3 sm:p-4 bg-white/60 backdrop-blur-sm rounded-lg border border-nature-200">
-                <Leaf className="h-6 w-6 sm:h-8 sm:w-8 text-primary flex-shrink-0" />
+                <Leaf className="h-6 w-6 sm:h-8 sm:w-8 text-white flex-shrink-0" />
                 <div className="text-left">
                   <h3 className="font-semibold text-xs sm:text-sm">Sustentável</h3>
                   <p className="text-xs text-muted-foreground">Responsável</p>
@@ -82,11 +82,11 @@ const Hero = () => {
             {/* Trust Indicators */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-xs sm:text-sm text-muted-foreground pt-4">
               <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-nature-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
                 <span>CNPJ: 37.622.945/0001-55</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-nature-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
                 <span>Sorocaba - SP</span>
               </div>
             </div>
