@@ -22,7 +22,7 @@ const Services = () => {
       icon: <TreePine className="h-8 w-8 sm:h-12 sm:w-12 text-primary" />,
       title: "Paisagismo",
       description: "Criação e manutenção de jardins, paisagismo corporativo e residencial. Transformamos espaços em ambientes verdes e acolhedores.",
-      features: ["Design de jardins", "Manutenção regular", "Plantio especializado", "Irrigação automática"]
+      features: ["Design de jardins", "Manutenção regular", "Plantio especializado"]
     },
     {
       icon: <Brush className="h-8 w-8 sm:h-12 sm:w-12 text-primary" />,
