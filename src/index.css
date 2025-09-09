@@ -80,7 +80,10 @@
 
   /* Gradientes */
   .gradient-text {
-    @apply bg-gradient-to-r from-nature-600 via-nature-500 to-nature-400 bg-clip-text text-transparent;
+    background: linear-gradient(135deg, #000000 0%, #1a4d1a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   /* Botões */
