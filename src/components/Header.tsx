@@ -76,11 +76,11 @@ const Header = () => {
           <div className="hidden xl:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm">
               <Phone className="h-4 w-4 text-primary" />
-              <span className="text-foreground">(11) 91031-4915</span>
+              <span className="text-foreground">(15) 99748-3423</span>
             </div>
             <Button 
               className="btn-hero"
-              onClick={() => window.open('https://wa.me/5511910314915', '_blank')}
+              onClick={() => window.open('https://wa.me/5515997483423', '_blank')}
             >
               WhatsApp
             </Button>
@@ -130,11 +130,11 @@ const Header = () => {
               <div className="px-4 pt-2 border-t border-border">
                 <div className="flex items-center space-x-2 text-xs sm:text-sm mb-3">
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
-                  <span className="text-foreground">(11) 91031-4915</span>
+                  <span className="text-foreground">(15) 99748-3423</span>
                 </div>
                 <Button 
                   className="btn-hero w-full text-sm"
-                  onClick={() => window.open('https://wa.me/5511910314915', '_blank')}
+                  onClick={() => window.open('https://wa.me/5515997483423', '_blank')}
                 >
                   WhatsApp
                 </Button>

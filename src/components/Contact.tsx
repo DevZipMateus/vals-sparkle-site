@@ -37,7 +37,7 @@ Serviço de interesse: ${formData.service}
 
 Mensagem: ${formData.message}`;
 
-      const whatsappUrl = `https://wa.me/5511910314915?text=${encodeURIComponent(whatsappMessage)}`;
+      const whatsappUrl = `https://wa.me/5515997483423?text=${encodeURIComponent(whatsappMessage)}`;
       window.open(whatsappUrl, '_blank');
       
       toast({
@@ -54,8 +54,8 @@ Mensagem: ${formData.message}`;
     {
       icon: <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       title: "Telefone",
-      content: "(11) 91031-4915",
-      link: "tel:+5511910314915"
+      content: "(15) 99748-3423",
+      link: "tel:+5515997483423"
     },
     {
       icon: <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
@@ -301,7 +301,7 @@ Mensagem: ${formData.message}`;
               <Button 
                 size="lg" 
                 className="btn-hero group w-full sm:w-auto"
-                onClick={() => window.open('https://wa.me/5511910314915?text=Olá! Gostaria de falar sobre os serviços da Val\'s.', '_blank')}
+                onClick={() => window.open('https://wa.me/5515997483423?text=Olá! Gostaria de falar sobre os serviços da Val\'s.', '_blank')}
               >
                 <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 WhatsApp Direto

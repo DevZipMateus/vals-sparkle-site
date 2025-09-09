@@ -61,7 +61,7 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="btn-hero group w-full sm:w-auto" onClick={() => window.open('https://wa.me/5511910314915?text=Olá! Gostaria de solicitar um orçamento para os serviços da Val\'s.', '_blank')}>
+              <Button size="lg" className="btn-hero group w-full sm:w-auto" onClick={() => window.open('https://wa.me/5515997483423?text=Olá! Gostaria de solicitar um orçamento para os serviços da Val\'s.', '_blank')}>
                 Solicitar Orçamento
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
               </Button>

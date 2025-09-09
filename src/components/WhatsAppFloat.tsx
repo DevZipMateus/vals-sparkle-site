@@ -21,7 +21,7 @@ const WhatsAppFloat = () => {
 
   const handleWhatsAppClick = () => {
     const message = "Olá! Vim do site e gostaria de saber mais sobre os serviços da Val's Limpeza e Paisagismo.";
-    const whatsappUrl = `https://wa.me/5511910314915?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5515997483423?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

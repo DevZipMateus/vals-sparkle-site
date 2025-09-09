@@ -77,7 +77,7 @@ const Services = () => {
                 <Button 
                   variant="outline" 
                   className="btn-outline-hero w-full group-hover:btn-hero transition-all duration-300 mt-auto"
-                  onClick={() => window.open('https://wa.me/5511910314915?text=Olá! Gostaria de saber mais sobre os serviços de ' + service.title.toLowerCase() + '.', '_blank')}
+                  onClick={() => window.open('https://wa.me/5515997483423?text=Olá! Gostaria de saber mais sobre os serviços de ' + service.title.toLowerCase() + '.', '_blank')}
                 >
                   Solicitar Orçamento
                 </Button>
@@ -97,7 +97,7 @@ const Services = () => {
             <Button 
               size="lg" 
               className="btn-hero w-full sm:w-auto"
-              onClick={() => window.open('https://wa.me/5511910314915?text=Olá! Preciso de um orçamento personalizado para meus serviços.', '_blank')}
+              onClick={() => window.open('https://wa.me/5515997483423?text=Olá! Preciso de um orçamento personalizado para meus serviços.', '_blank')}
             >
               Falar com Especialista
             </Button>
