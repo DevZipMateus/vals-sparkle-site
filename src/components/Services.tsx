@@ -28,7 +28,7 @@ const Services = () => {
       icon: <Brush className="h-8 w-8 sm:h-12 sm:w-12 text-primary" />,
       title: "Serviços Especializados",
       description: "Soluções personalizadas para necessidades específicas, incluindo limpeza pós-obra, eventos e serviços emergenciais.",
-      features: ["Limpeza pós-obra", "Eventos especiais", "Atendimento emergencial", "Consultoria técnica"]
+      features: ["Limpeza pós-obra", "Consultoria técnica"]
     }
   ];
 
