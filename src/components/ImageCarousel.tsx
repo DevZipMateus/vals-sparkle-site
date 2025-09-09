@@ -14,43 +14,43 @@ const ImageCarousel = () => {
   // Lista das imagens da pasta public/lovable-uploads/imagens/
   const images = [
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.18_f677cf26.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.18_f677cf26.jpg',
       alt: 'Serviços de limpeza profissional Val\'s'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.19_1a21ad45.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.19_1a21ad45.jpg',
       alt: 'Serviços de limpeza e paisagismo'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.19_20f51281.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.19_20f51281.jpg',
       alt: 'Equipe profissional de limpeza'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.19_b756959c.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.19_b756959c.jpg',
       alt: 'Tratamento de pisos especializado'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.19_eaec2be7.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.19_eaec2be7.jpg',
       alt: 'Serviços de jardinagem e paisagismo'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.20_118df18e.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.20_118df18e.jpg',
       alt: 'Limpeza residencial e comercial'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.20_2b82a995.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.20_2b82a995.jpg',
       alt: 'Conservação e manutenção'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.20_9588bc4d.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.20_9588bc4d.jpg',
       alt: 'Serviços especializados de limpeza'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.20_fcc44bed.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.20_fcc44bed.jpg',
       alt: 'Cuidados com jardins e áreas verdes'
     },
     {
-      src: '/lovable-uploads/imagens/Imagem do WhatsApp de 2025-09-08 à(s) 17.01.21_4cd454aa.jpg',
+      src: '/lovable-uploads/imagens/Imagem%20do%20WhatsApp%20de%202025-09-08%20à(s)%2017.01.21_4cd454aa.jpg',
       alt: 'Resultados profissionais garantidos'
     }
   ];
